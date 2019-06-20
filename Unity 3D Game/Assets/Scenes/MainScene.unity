@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: 0.6666667, g: 0.7058824, b: 0.78431374, a: 1}
+  m_AmbientEquatorColor: {r: 0.3529412, g: 0.43137255, b: 0.50980395, a: 1}
+  m_AmbientGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571334, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -51,8 +51,8 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 1
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
@@ -445,17 +445,22 @@ PrefabInstance:
     - target: {fileID: 1949169690722727453, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 11
+      value: NaN
       objectReference: {fileID: 0}
     - target: {fileID: 1949169690722727453, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: -1.7014118e+38
+      value: NaN
       objectReference: {fileID: 0}
     - target: {fileID: 1949169690722727453, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0.38671875
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949169690722727453, guid: 549c69af39b84624b8a053537c407def,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: NaN
       objectReference: {fileID: 0}
     - target: {fileID: 3734704274410392835, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
@@ -475,37 +480,47 @@ PrefabInstance:
     - target: {fileID: 6205683311567474132, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6205683311567474132, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: -1.9852458e+23
+      value: 8e-45
       objectReference: {fileID: 0}
     - target: {fileID: 6205683311567474132, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0.041992188
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205683311567474132, guid: 549c69af39b84624b8a053537c407def,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: -8e-45
       objectReference: {fileID: 0}
     - target: {fileID: 6913876409126090272, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 11.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6913876409126090272, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: NaN
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6913876409126090272, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0.01171875
+      value: 2.3510647e-38
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913876409126090272, guid: 549c69af39b84624b8a053537c407def,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 2.3510647e-38
       objectReference: {fileID: 0}
     - target: {fileID: 7783876597721242196, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 11.5
+      value: 10.5
       objectReference: {fileID: 0}
     - target: {fileID: 7783876597721242196, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
@@ -515,7 +530,7 @@ PrefabInstance:
     - target: {fileID: 7783876597721242196, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0.045898438
+      value: 4.7976476e-23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 549c69af39b84624b8a053537c407def, type: 3}
@@ -546,19 +561,19 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.4674495, g: 0.23366857, b: 0.5566038, a: 1}
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 3
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_Bias: 0.01
+    m_NormalBias: 0.01
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
@@ -603,13 +618,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.25488704, y: 0.16773124, z: -0.044943456, w: 0.9512512}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 20, z: 0}
 --- !u!1 &805798884 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7426313795645915253, guid: 81354657cab8d4b7cb2c538710adcb0f,
