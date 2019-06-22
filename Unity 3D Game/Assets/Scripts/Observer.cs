@@ -31,11 +31,11 @@ public class Observer : MonoBehaviour
     {
         if (m_IsPlayerInRange)
         {
-            Vector3 direction = player.position - transform.position + Vector3.up;
+            Vector3 direction = player.position - transform.position + Vector3.up; //vector3.up is (0,1,0)
             Ray ray = new Ray(transform.position, direction);
             RaycastHit raycastHit;
 
-            if (Physics.Raycast(ray, out raycastHit))
+            if (Physics.Raycast(ray, out raycastHit)) //returns true if the ray hits the player
             {
                 if (raycastHit.collider.transform == player)
                 {
